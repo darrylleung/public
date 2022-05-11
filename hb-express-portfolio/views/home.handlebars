@@ -1,0 +1,19 @@
+<h1>Home Template</h1>
+<h2>Hello {{cohort}}</h2>
+<ul>
+    {{#teachers}}
+        <li>{{stressImportance name}} says "hi" to {{../cohort}}</li>
+        <li>{{age}}</li>
+        <li>lives in: {{address}}</li>
+        <li>lives on street {{address.street}} </li>
+    {{/teachers}}
+</ul>
+{{>button
+    text=btnText
+}}
+{{!-- alternative syntax for looping
+<ul>
+    {{#each teachers}}
+        <li>{{this.name}}</li>
+    {{/each}}
+</ul> --}}

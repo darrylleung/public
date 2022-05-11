@@ -1,0 +1,15 @@
+    <h1>About Template</h1>
+    <ul>
+        {{#emojis}}
+        <li>{{.}}</li>
+        {{/emojis}}
+    </ul>
+
+    <h2>{{stressImportance "hello"}}</h2>
+
+    <h2>{{btnText}} we are passing to the button partial</h2>
+
+    {{>button
+        icon=true
+        text=btnText
+    }}

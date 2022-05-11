@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+}
+
+footer {
+    position: fixed;
+    top: 750px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+div.welcome {
+    position: absolute;
+    top: 50px;
+}
+
+div.projects {
+    position: relative;
+    top: 10%;
+    display: flex;
+    width: 100%;
+}
+
+div.project-list {
+    position: absolute;
+    height: 50%;
+    width: 200px;
+    top: 50px;
+}
+
+div.image-container {
+    width: 300px;
+    height: 400px;
+    margin: 10px 10px;
+}
+
+div.description {
+    position: relative;
+    top: 50px;
+    left: 30%;
+    width: 500px;
+}
+
+div.large-image-container {
+    width: 500px;
+    height: 500px;
+}
+
+img.thumb {
+    max-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+img.thumb-large {
+    max-width: 100%;
+}
+
+img.thumb:hover {
+    transform: scale(0.9);
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

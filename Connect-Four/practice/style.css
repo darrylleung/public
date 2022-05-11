@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.background {
+    background-color: lightgrey;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.hole {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.player1 .hole {
+    background-color: red;
+}
+
+.player2 .hole {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 100px;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.container2 {
+    display: flex;
+    position: absolute;
+    left: 25.7%;
+    top: 100px;
+    background-color: transparent;
+    z-index: 99;
+    /* visibility: hidden; */
+}
+
+.reset {
+    position: fixed;
+    width: 700px;
+    height: 30px;
+    top: 88%;
+    left: 25.7%;
+    background-color: blue;
+    z-index: 102;
+}
+
+.move {
+    animation: slide 3s backwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fall {
+    animation: slideY 2s forwards;
+    background-color: transparent;
+}
+
+@keyframes slideY {
+    0% {
+        transform: translateY(0);
+    }
+
+    /* 50% {
+        transform: translateY(200%);
+    } */
+
+    100% {
+        transform: translateY(400%);
+    }
+}
+
+.victory {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+}
+
+.visibility {
+    visibility: visible;
+    user-select: none;
+}

@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    z-index: 100;
+}
+
+.popup-close {
+    position: relative;
+    float: right;
+    top: -50px;
+    right: -10px;
+    max-width: 20px;
+}
+
+.popuptext {
+    position: fixed;
+    width: 40%;
+    height: 30%;
+    top: 35%;
+    left: 30%;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 60px 20px;
+    z-index: 101;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    z-index: 4;
+}
+
+.side-nav {
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    left: 100%;
+    z-index: 5;
+    transition: 1s;
+}
+
+.side-nav a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.side-nav a:hover {
+    font-style: italic;
+}
+
+.side-nav a:visited {
+    color: black;
+}
+
+.side-nav a:active {
+    color: black;
+}
+
+.side-nav-links {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: x-large;
+}
+
+.open {
+    transition-property: transform;
+    transition-duration: 1s;
+    transform: translateX(-100%);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.close-out {
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 10px;
+    max-width: 20px;
+}
+
+header {
+    background-color: #fff;
+    height: 60px;
+}
+
+.logo {
+    height: 40px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.hamburgermenu {
+    height: 40px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.bigimg {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.spice {
+    position: relative;
+    width: 100%;
+    filter: brightness(0.8);
+    margin: 0 auto;
+    z-index: 0;
+    vertical-align: bottom;
+}
+
+.text-block {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+button {
+    border-radius: 36px;
+    background: gold;
+    border: 2px solid darkorange;
+    font-size: x-large;
+    font-family: serif;
+    color: darkorange;
+    text-align: center;
+    padding: 8px 69px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: darkorange;
+    color: gold;
+    border: 2px solid gold;
+}
+
+button:active {
+    transform: translateY(3px);
+}
+
+.blockContainer {
+    margin: 0 auto;
+    height: 350px;
+    background-color: lightgrey;
+    font-size: larger;
+}
+
+.topbox {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: 40px;
+}
+
+.box1 {
+    width: 49.5%;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+}
+
+.box2 {
+    width: 49.5%;
+    display: inline-block;
+    position: relative;
+    right: 60px;
+}
+
+.topleft {
+    height: 150px;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+.topright {
+    height: 150px;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+.bottombox {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.box3 {
+    width: 49.5%;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 60px;
+}
+
+.box4 {
+    width: 49.5%;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    right: 60px;
+}
+
+.bottomleft {
+    height: 150px;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+.bottomright {
+    height: 150px;
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+.small-icon {
+    max-width: 50px;
+    vertical-align: top;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+img[alt="cat"] {
+    width: 30%;
+}
+
+img[alt="world"] {
+    width: 30%;
+}
+
+img[alt="swim"] {
+    width: 30%;
+}
+
+img[alt="columns"] {
+    width: 30%;
+}
+
+h5 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+footer {
+    background-color: grey;
+    height: 30px;
+}
+
+h6 {
+    color: #fff;
+    font-size: small;
+}
+
+.footertext {
+    position: relative;
+    top: 8px;
+    padding-left: 20px;
+}
+
+/* figure out how to do this over the weekend
+@media (max-width: 500px) {
+    .benefits {
+        width: auto,
+        display: block;
+    }
+}*/

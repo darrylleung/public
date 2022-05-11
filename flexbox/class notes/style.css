@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    border: 2px tomato solid;
+    padding: 20px;
+    display: flex;
+    /* inline-flex, vertical-align:top */
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    /* flex-direction:  row, row-reverse, column, column-reverse */
+}
+
+div {
+    border: 2px tomato dashed;
+    height: 100px;
+    flex-basis: 125px;
+    margin: 10px;
+    /* margin still applies even with justify-content */
+}
+
+#d {
+    height: 50px;
+    border-color: midnightblue;
+    align-self: center;
+}

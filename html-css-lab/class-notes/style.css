@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    animation: club 2s infinite;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+aside {
+    float: right;
+}
+
+main {
+    float: left;
+}
+
+#emoji2 {
+    background-color: lightsalmon;
+}
+
+.emoji {
+    font-size: 50px;
+    padding: 20px;
+    background-color: lightcoral;
+}
+
+.octopus {
+    position: absolute;
+    bottom: 30px;
+    left: 200px;
+    font-size: 150px;
+    background-color: lightseagreen;
+    transition: transform 3s ease-in;
+}
+
+.octopus:hover {
+    transform: rotate(500deg) scale(6);
+    filter: invert(1);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(900px) rotate(270deg);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+img {
+    width: 400px;
+    /* animation-name: slide;
+    animation-duration: 3s;
+    animation-fill-mode: backwards; */
+    animation: slide 3s infinite;
+}
+
+/* targets ALL paragraphs that are DIRECT children of section
+section > p {
+    border: 4px dashed plum;
+} */
+
+/*targets all p tags inside section regardless of whether they're a deirect child or not*/
+/* section p {
+    border: 5px solid orangered;
+} */
+
+p + q {
+    background-color: powderblue;
+}
+
+div.quote {
+    color: rebeccapurple;
+    font-size: 20px;
+}
+
+img[alt="grumpy cat"] {
+    width: 200px;
+}
+
+li:first-child {
+    background-color: cadetblue;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+li:last-child {
+    background-color: black;
+    color: white;
+}
+
+li:nth-of-type(2n) {
+    background-color: turquoise;
+}
+
+img:hover {
+    border: 4px dashed cornflowerblue;
+}
+
+a:active {
+    color: darkred;
+    font-size: 25px;
+}
+
+a:visited {
+    color: black;
+    font-size: 20px;
+}
+
+h1:before {
+    content: "🍩--->";
+    font-size: 30px;
+}
+
+@keyframes club {
+    0% {
+        background-color: aquamarine;
+    }
+
+    20% {
+        background-color: cyan;
+    }
+
+    40% {
+        background-color: chartreuse;
+    }
+
+    60% {
+        background-color: thistle;
+    }
+
+    80% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Kitty Carousel",
+        "directory": "kitty-carousel",
+        "description": "Cats on an infinitely moving carousel, with buttons that correspond with and summon the appropriately positioned cat."
+    },
+    {
+        "title": "Connect Four",
+        "directory": "connect-four",
+        "description": "Connect Four created entirely from Javascript and CSS."
+    },
+    {
+        "title": "Incremental Search",
+        "directory": "incremental-search",
+        "description": "A word bank containing a list of countries and territories can be searched through, with results displayed alphabetically. The search is incremental, going beyond just the first letter of the word."
+    },
+    {
+        "title": "Spotify Search",
+        "directory": "spotify-search",
+        "description": "An app built on the Spotify API that searches through Spotify for Artist and Album."
+    }
+]

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+#head {
+    width: 200px;
+    height: 200px;
+    border: 5px tomato solid;
+    border-radius: 50%;
+}
+
+.arms {
+    width: 400px;
+    height: 5px;
+    background-color: tomato;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    transform: rotate(22.5deg);
+    transform-origin: left;
+}

@@ -1,0 +1,14 @@
+[
+    { "name": "Marcell" },
+    { "name": "Andrea" },
+    { "name": "Oli" },
+    { "name": "Alistair" },
+    { "name": "David" },
+    {
+        "name": "Merle",
+        "age": "34",
+        "address": {
+            "street": "something street"
+        }
+    }
+]

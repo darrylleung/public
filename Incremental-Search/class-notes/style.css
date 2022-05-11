@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 10px;
+}
+
+input {
+    border: 5px dashed black;
+    border-radius: 5px;
+    width: 800px;
+    font-size: 32px;
+    padding: 5px 5px;
+    font-family: "Space Mono", monospace;
+    outline: none;
+}
+
+#results {
+    width: 800px;
+    font-size: 32px;
+    font-family: "Space Mono", monospace;
+    background-color: white;
+    visibility: hidden;
+}
+
+#results.visibility {
+    visibility: visible;
+}
+
+#results div.highlight {
+    background-color: lightgrey;
+}
+
+#results div {
+    padding: 2px 9px;
+}

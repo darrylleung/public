@@ -1,0 +1,12 @@
+<h1>Darryl's Portfolio</h1>
+<div class="project-list">
+    {{>projList}}
+    <a href="/"><p><em>Back Home</em></p></a>
+</div>
+<div class="description">
+<div class="large-image-container">
+    <img class="thumb-large" src="/{{selectedProject.directory}}/thumbLarge.jpg" />
+</div>
+    <h3>{{selectedProject.title}}</h3>
+    <p>{{selectedProject.description}}</p>
+</div>

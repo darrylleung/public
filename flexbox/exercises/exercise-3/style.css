@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: grey;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: goldenrod;
+    height: 70px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    background-color: pink;
+    height: 30px;
+}

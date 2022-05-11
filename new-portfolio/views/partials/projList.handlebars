@@ -1,0 +1,14 @@
+{{#projects}}
+    {{#if ../thumb}}
+    <div class="image-container">
+        <a href="/projects/{{directory}}">
+            <img class="thumb" src="/{{directory}}/thumb.jpg" />
+        </a>
+        <p>{{title}}</p>
+    </div>
+    {{else}}
+    <a href="/projects/{{directory}}">
+    <p>{{title}}</p>
+    </a>
+    {{/if}}
+{{/projects}}

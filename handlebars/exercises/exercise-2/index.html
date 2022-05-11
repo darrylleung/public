@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            href="/Users/Darryl/Desktop/truffle-code/dev/Spotify-Search/exercises/assets/Spotify_Icon_RGB_Black.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+            rel="stylesheet"
+        />
+        <title>Spotify Search</title>
+    </head>
+    <body>
+        <div class="logo">
+            <img
+                src="/Users/Darryl/Desktop/truffle-code/dev/Spotify-Search/exercises/assets/Spotify_Logo_RGB_White.png"
+            />
+        </div>
+        <div class="tape">
+            <img src="assets/duct-tape.png" />
+        </div>
+        <div class="marker-text">SEARCH</div>
+        <div class="search-fields">
+            <select>
+                <option value="artist">Artist</option>
+                <option value="album">Album</option>
+            </select>
+            <input type="text" />
+            <button class="search-button">Search</button>
+            <button class="more-button">More</button>
+        </div>
+        <div class="results-msg"></div>
+        <div class="results-container">
+            <div class="results-images">
+                <script id="artistImage" type="text/x-handlebars-template">
+                    {{#data.results}}
+                        <div>
+                            <img src="{{photo}}" />
+                        </div>
+                    {{/data.results}}
+                </script>
+            </div>
+            <div class="results-text">
+                <script id="artistName" type="text/x-handlebars-template">
+                    {{#data.results}}
+                        <div>
+                            {{artist}}
+                        </div>
+                    {{/data.results}}
+                </script>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+<!-- create a "favorites" list that users can click a button to add to -->
